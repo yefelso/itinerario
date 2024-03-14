@@ -1,0 +1,109 @@
+﻿<Window x:Class="Itinerario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Itinerario"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <!-- Columna izquierda para el calendario -->
+            <ColumnDefinition Width="3*"/>
+            <!-- Columna derecha para otros elementos -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Calendario -->
+        <Grid Grid.Column="0">
+            <!-- Aquí coloca tu código para el calendario -->
+            <!-- Por ejemplo: -->
+            <Label Content="Calendario" HorizontalAlignment="Center" Height="34" VerticalAlignment="Top" Margin="0,10,0,0"/>
+            <!-- ComboBoxes para año y mes -->
+            <ComboBox x:Name="cmbYear" Margin="22,61,218,0" VerticalAlignment="Top" Width="80" SelectionChanged="cmbYear_SelectionChanged">
+                <ComboBoxItem Content="2023"/>
+                <ComboBoxItem Content="2024"/>
+                <ComboBoxItem Content="2025"/>
+                <ComboBoxItem Content="2026"/>
+                <!-- Puedes agregar más años aquí si es necesario -->
+            </ComboBox>
+            <ComboBox x:Name="cmbMonth" Margin="160,61,60,0" VerticalAlignment="Top" Width="100" SelectionChanged="cmbMonth_SelectionChanged" RenderTransformOrigin="0.53,1.231">
+                <ComboBoxItem Content="Enero"/>
+                <ComboBoxItem Content="Febrero"/>
+                <ComboBoxItem Content="Marzo"/>
+                <ComboBoxItem Content="Abril"/>
+                <ComboBoxItem Content="Mayo"/>
+                <ComboBoxItem Content="Junio"/>
+                <ComboBoxItem Content="Julio"/>
+                <ComboBoxItem Content="Agosto"/>
+                <ComboBoxItem Content="Septiembre"/>
+                <ComboBoxItem Content="Octubre"/>
+                <ComboBoxItem Content="Noviembre"/>
+                <ComboBoxItem Content="Diciembre"/>
+            </ComboBox>
+        </Grid>
+
+        <!-- Otra parte de la ventana (a la derecha del calendario) -->
+        <Grid Grid.Column="1">
+            <!-- Aquí puedes colocar otros elementos que desees mostrar -->
+            <!-- Por ejemplo: -->
+            <Label Content="AGENDAS" HorizontalAlignment="Center" Height="34" VerticalAlignment="Top" Margin="0,10,0,0"/>
+            <Label Content="Lunes" HorizontalAlignment="Left" Height="29" Margin="100,61,0,0" VerticalAlignment="Top" Width="48"/>
+            <Label Content="Domingo" HorizontalAlignment="Left" Height="29" Margin="408,61,0,0" VerticalAlignment="Top" Width="62"/>
+            <Label Content="Sabado" HorizontalAlignment="Left" Height="29" Margin="352,61,0,0" VerticalAlignment="Top" Width="51"/>
+            <Label Content="Viernes" HorizontalAlignment="Left" Height="29" Margin="304,61,0,0" VerticalAlignment="Top" Width="48"/>
+            <Label Content="Jueves" HorizontalAlignment="Left" Height="29" Margin="256,61,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="1.146,0.691"/>
+            <Label Content="Miercoles" HorizontalAlignment="Left" Height="29" Margin="196,61,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.466,0.588"/>
+            <Label Content="Martes" HorizontalAlignment="Left" Height="29" Margin="148,61,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.417,0.588"/>
+            <Label Content="Tareas" HorizontalAlignment="Left" Height="29" Margin="29,61,0,0" VerticalAlignment="Top" Width="57"/>
+            <Label Content="Levantarse" HorizontalAlignment="Left" Height="28" Margin="10,107,0,0" VerticalAlignment="Top" Width="76"/>
+            <Label Content="Hacer ejercicios" HorizontalAlignment="Left" Height="28" Margin="10,297,0,0" VerticalAlignment="Top" Width="93"/>
+            <Label Content="Almorzar" HorizontalAlignment="Left" Height="28" Margin="10,264,0,0" VerticalAlignment="Top" Width="76"/>
+            <Label Content="Ir al Trabajo" HorizontalAlignment="Left" Height="28" Margin="10,231,0,0" VerticalAlignment="Top" Width="76"/>
+            <Label Content="Ir al Instituto" HorizontalAlignment="Left" Height="28" Margin="10,0,0,0" VerticalAlignment="Center" Width="76"/>
+            <Label Content="Cambiarse" HorizontalAlignment="Left" Height="28" Margin="10,173,0,0" VerticalAlignment="Top" Width="76"/>
+            <Label Content="Asearse" HorizontalAlignment="Left" Height="28" Margin="10,140,0,0" VerticalAlignment="Top" Width="76"/>
+            <Label Content="cenar" HorizontalAlignment="Left" Height="28" Margin="10,358,0,0" VerticalAlignment="Top" Width="93"/>
+            <Label Content="Asearse" HorizontalAlignment="Left" Height="28" Margin="10,325,0,0" VerticalAlignment="Top" Width="93"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,182,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,141,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,109,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,358,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,331,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,303,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,270,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,240,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,212,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,182,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,149,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="166,109,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,360,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,331,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,303,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,270,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.601,3.579"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,237,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,212,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,179,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.451,3.182"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.501,2.851"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,109,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,109,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,109,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,109,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="114,109,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="270,334,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="270,303,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="270,280,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="270,240,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="270,212,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="270,182,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.801,1.062"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="270,139,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="270,109,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,357,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,334,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.406,10.269"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,303,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,277,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,240,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Margin="220,212,0,0" VerticalAlignment="Top"/>
+        </Grid>
+    </Grid>
+</Window>
